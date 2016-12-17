@@ -14,10 +14,10 @@ int main( int argc, char **argv )
 {
     struct R_I{
 		char roman ;
-		int integer;
+		int int_num;
 	};
 	R_I num[7]={{ 'I',1},{ 'V',5},{ 'X',10},{ 'L',50},{ 'C',100},{ 'D',500},{ 'M',1000} };
-    string s("XCVIII");
+    string s( "MCDLXXVI" );
 	int i = 0;
 	int j=0;
 	vector<int> temp;
@@ -35,7 +35,7 @@ int main( int argc, char **argv )
 			cerr<<"input err"<<endl;
 			return -1;
 		}
-		temp.push_back( num[ j ].integer );
+		temp.push_back( num[ j ].int_num );
 		i++;
 	}
     vector<int>::iterator it;
@@ -47,12 +47,12 @@ int main( int argc, char **argv )
 			interger -= *it;
 		else
 		{
-			while( it!=temp.end() )
-			{
+		//	while( it!=temp.end() )
+		//	{
 				interger+=*it;
-				it++;
-			}
-			break;
+		//		it++;
+		//	}
+		//	break;
 		}
 
 	}
