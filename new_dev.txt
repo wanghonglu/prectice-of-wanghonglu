@@ -1,5 +1,2 @@
 jfkdjfdjfljdsfaklfjdflskdj
-<<<<<<< HEAD
-=======
 111222jfjdsfaklfjdflskdj
->>>>>>> dev
