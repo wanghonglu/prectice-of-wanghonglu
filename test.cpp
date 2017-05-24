@@ -7,14 +7,42 @@
 
 #include<iostream>
 using namespace std;
-void reference( const char* &a )
+class DE
 {
-//	cout<<a<<endl;
-}
+    public:
+		DE( int x ):a(x){}
+		~DE(){}
+		void test()
+		{
+			a+=2;
+		}
+		void test() const
+		{
+		    cout<<a<<endl;	
+		}
+		const void const display()
+		{
+			cout<<a<<endl;
+		}
+	private:
+		int a;
+};
+class ME:public DE
+{
+	public :
+		ME( int x, int y ): DE( 4 ),m(x),n(y){}
+	private:
+		int m;
+		int n;
+
+};
 int main()
 {
-	char  a[]="abc";
-	reference( a );
+	DE a(9);
+	a.display();
+
+	ME b( 4, 5 );
+	b.display();
 
 	return 0;
 }

@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-//#include<conio.h>
 typedef struct card
 {
     int Suit;              //花色 
@@ -17,8 +16,8 @@ void Deal();                   //按顺序发牌
 
 int main()
 {
- printf("   -------------------------------\n");
-printf("      ------------欢迎纸牌--------\n");
+printf("   -------------------------------\n");
+printf("   ------------欢迎纸牌--------\n");
 printf("   --------------------------------\n");
 
 
